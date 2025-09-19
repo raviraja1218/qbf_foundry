@@ -1,0 +1,34 @@
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
+*.log
+jupyter.log
+.env
+data/raw/
+# ignore big binary artifacts unless tracked with LFS
+*.npz
+*.h5
+*.ckpt
+# optional: keep small csv/json outputs but ignore huge raw batches
+reports/hybrid_batch_raw.npz
+reports/quantum_opt_batch_raw.npz
+# local env / secrets
+.env
+*.env
+start_qbf.sh
+start_qbf.shrt_qbf.sh
+
+# large binary reports
+reports/*.npz
+reports/hybrid_batch_raw.npz
+reports/quantum_opt_batch_raw.npz
+
+# notebook checkpoints & logs
+.ipynb_checkpoints/
+*.pyc
+jupyter.log
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
