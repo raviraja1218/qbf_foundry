@@ -1,0 +1,16 @@
+Biological score summary
+Rows: 12
+Mean delta (quantum - classical): 0.0176 ± 0.0258
+Improved: 9, Worsened: 3
+
+Top improvements:
+- P00734.npz: Δ=0.0484 (classical=0.0834, quantum=0.1318)
+- P04637.npz: Δ=0.0450 (classical=0.0880, quantum=0.1331)
+- P01009.npz: Δ=0.0359 (classical=0.0981, quantum=0.1340)
+- sampleC.npz: Δ=0.0341 (classical=0.0976, quantum=0.1317)
+- P35579.npz: Δ=0.0327 (classical=0.0960, quantum=0.1287)
+- P68871.npz: Δ=0.0277 (classical=0.0824, quantum=0.1101)
+- P0A8T7.npz: Δ=0.0202 (classical=0.0761, quantum=0.0964)
+- P38398.npz: Δ=0.0177 (classical=0.0995, quantum=0.1172)
+- sampleA.npz: Δ=0.0056 (classical=0.1080, quantum=0.1137)
+- P69905.npz: Δ=-0.0055 (classical=0.1224, quantum=0.1169)

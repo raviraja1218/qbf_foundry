@@ -1,0 +1,4 @@
+overall_per_residue_accuracy: 0.09486931268151017
+mean_per_sequence_accuracy: 0.09242660871433507
+n_sequences: 12
+n_residues_evaluated: 3099

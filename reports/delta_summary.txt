@@ -1,0 +1,12 @@
+=== Quantum vs Classical Delta Analysis ===
+
+Total proteins: 12
+Mean Δ: 0.1572 ± 0.2054
+Improved: 10, Worsened: 2
+
+Top 5 improvements:
+- P00734.npz: Δ=0.4027
+- sampleC.npz: Δ=0.3767
+- P04637.npz: Δ=0.3203
+- P01009.npz: Δ=0.2650
+- P68871.npz: Δ=0.2263

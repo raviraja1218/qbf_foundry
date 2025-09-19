@@ -1,0 +1,43 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# go to repo (edit path if different)
+cd "$HOME/qbf_foundry" || { echo "Repo not found at $HOME/qbf_foundry"; exit 2; }
+
+# load conda (adjust if you installed conda elsewhere)
+if [ -f "$HOME/miniconda3/etc/profile.d/conda.sh" ]; then
+  source "$HOME/miniconda3/etc/profile.d/conda.sh"
+elif [ -f "$HOME/anaconda3/etc/profile.d/conda.sh" ]; then
+  source "$HOME/anaconda3/etc/profile.d/conda.sh"
+else
+  echo "ERROR: conda init script not found. Please update path in start_qbf.sh" >&2
+  exit 3
+fi
+
+# activate environment
+conda activate qbf_clean
+
+# set project env vars
+export PYTHONPATH="$PWD"
+
+# ensure reports dir
+mkdir -p reports
+
+# start jupyter inside tmux to keep it alive after closing terminal
+if ! command -v tmux >/dev/null 2>&1; then
+  echo "tmux not installed. Starting jupyter with nohup instead (process will persist)." >&2
+  nohup jupyter lab --no-browser --port=8889 > jupyter.log 2>&1 &
+  echo "Jupyter started with nohup. Check jupyter.log for token/URL."
+else
+  SESSION="qbf_lab"
+  # create a detached tmux session running jupyter (won't create duplicate session)
+  if tmux ls 2>/dev/null | grep -q "^${SESSION}:"; then
+    echo "tmux session ${SESSION} already exists; not creating a new one."
+  else
+    tmux new -d -s "${SESSION}" "jupyter lab --no-browser --port=8889 > jupyter.log 2>&1"
+    echo "Started jupyter in tmux session: ${SESSION}"
+  fi
+  echo "To attach: tmux attach -t ${SESSION}"
+fi
+
+echo "Done. Use 'tail -f jupyter.log' to follow logs."

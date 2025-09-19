@@ -1,0 +1,42 @@
+{
+  "backend": "ibm_torino",
+  "job_id": "d36ni70itjus73f5goe0",
+  "result_type": "<class 'qiskit.primitives.containers.primitive_result.PrimitiveResult'>",
+  "result_summary": "PrimitiveResult([SamplerPubResult(data=DataBin(meas=BitArray(<shape=(), num_shots=256, num_bits=133>)), metadata={'circuit_metadata': {}})], metadata={'execution': {'execution_spans': ExecutionSpans([DoubleSliceSpan(<start='2025-09-19 15:39:15', stop='2025-09-19 15:39:16', size=256>)])}, 'version': 2})",
+  "counts_extracted": true,
+  "counts_len": 251,
+  "debug_summary": {
+    "backend": "ibm_torino",
+    "job_id": "d36ni70itjus73f5goe0",
+    "result_type": "<class 'qiskit.primitives.containers.primitive_result.PrimitiveResult'>",
+    "method": "meas.get_counts",
+    "meas_dir": [
+      "array",
+      "bitcount",
+      "concatenate",
+      "concatenate_bits",
+      "concatenate_shots",
+      "expectation_values",
+      "from_bool_array",
+      "from_counts",
+      "from_samples",
+      "get_bitstrings",
+      "get_counts",
+      "get_int_counts",
+      "ndim",
+      "num_bits",
+      "num_shots",
+      "postselect",
+      "reshape",
+      "shape",
+      "size",
+      "slice_bits",
+      "slice_shots",
+      "to_bool_array",
+      "transpose"
+    ],
+    "meas_repr": "BitArray(<shape=(), num_shots=256, num_bits=133>)",
+    "num_shots_detected": 256,
+    "num_bits_detected": 133
+  }
+}

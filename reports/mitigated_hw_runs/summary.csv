@@ -1,0 +1,6 @@
+run,job_id,seed,shots,raw_counts_len,mitigated_counts_len,elapsed_sec,debug_json
+0,d36i33sgenls73cd0gqg,254545103,256,4,4,10.75743579864502,reports/mitigated_hw_runs/debug_run_00_d36i33sgenls73cd0gqg.json
+1,d36i374da4cs73a7v2dg,87613166,256,4,4,13.83646535873413,reports/mitigated_hw_runs/debug_run_01_d36i374da4cs73a7v2dg.json
+2,d36i3a80sqis7397oekg,249592085,256,4,4,11.012863159179688,reports/mitigated_hw_runs/debug_run_02_d36i3a80sqis7397oekg.json
+3,d36i3e4genls73cd0h40,507578395,256,4,4,14.157400131225586,reports/mitigated_hw_runs/debug_run_03_d36i3e4genls73cd0h40.json
+4,d36i3h00sqis7397oet0,83164522,256,4,4,11.982759714126587,reports/mitigated_hw_runs/debug_run_04_d36i3h00sqis7397oet0.json
