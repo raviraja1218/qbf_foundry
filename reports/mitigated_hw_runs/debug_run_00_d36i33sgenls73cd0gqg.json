@@ -1,0 +1,54 @@
+{
+  "run": 0,
+  "seed": 254545103,
+  "backend": "ibm_torino",
+  "shots": 256,
+  "job_id": "d36i33sgenls73cd0gqg",
+  "elapsed_sec": 10.75743579864502,
+  "raw_counts": {
+    "01": 14,
+    "00": 129,
+    "11": 88,
+    "10": 25
+  },
+  "mitigated_counts": {
+    "00": 152,
+    "01": 0,
+    "10": 0,
+    "11": 104
+  },
+  "debug_summary": {
+    "backend": "ibm_torino",
+    "job_id": "d36i33sgenls73cd0gqg",
+    "result_type": "<class 'qiskit.primitives.containers.primitive_result.PrimitiveResult'>",
+    "method": "meas.get_counts",
+    "meas_dir": [
+      "array",
+      "bitcount",
+      "concatenate",
+      "concatenate_bits",
+      "concatenate_shots",
+      "expectation_values",
+      "from_bool_array",
+      "from_counts",
+      "from_samples",
+      "get_bitstrings",
+      "get_counts",
+      "get_int_counts",
+      "ndim",
+      "num_bits",
+      "num_shots",
+      "postselect",
+      "reshape",
+      "shape",
+      "size",
+      "slice_bits",
+      "slice_shots",
+      "to_bool_array",
+      "transpose"
+    ],
+    "meas_repr": "BitArray(<shape=(), num_shots=256, num_bits=2>)",
+    "num_shots_detected": 256,
+    "num_bits_detected": 2
+  }
+}

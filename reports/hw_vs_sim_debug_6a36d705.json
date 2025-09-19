@@ -1,0 +1,22 @@
+{
+  "run_id": "6a36d705",
+  "seed": 0,
+  "qubits": 2,
+  "shots": 256,
+  "backend": "ibm_torino",
+  "job_id": null,
+  "stats": {
+    "js_div": 0.0,
+    "kl_avg": 0.0,
+    "l1": 0.0,
+    "l2": 0.0,
+    "fidelity": 0.0,
+    "sim_top_probs": {},
+    "hw_top_probs": {},
+    "pa": [],
+    "pb": [],
+    "keys": []
+  },
+  "raw_sim_counts": {},
+  "raw_hw_counts": {}
+}

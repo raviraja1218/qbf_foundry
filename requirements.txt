@@ -1,0 +1,12 @@
+torch
+numpy
+scipy
+pandas
+biopython
+rdkit-pypi
+qiskit
+pennylane
+cirq
+pyyaml
+matplotlib
+openmm

@@ -1,0 +1,17 @@
+name: qbf_clean
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - numpy
+  - scipy
+  - pandas
+  - matplotlib
+  - seaborn
+  - scikit-learn
+  - jupyterlab
+  - qiskit=0.39.*           # adjust to your installed qiskit if needed
+  - qiskit-ibm-runtime
+  - pip:
+    - pennylane
